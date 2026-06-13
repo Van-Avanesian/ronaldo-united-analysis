@@ -1,0 +1,3 @@
+date,competition,opponent,home_away,manager,rest_days,ronaldo,ronaldo_started,ronaldo_minutes,utd_goals_for,utd_goals_against,points,utd_xg,opp_xg,utd_possession,utd_shots,opp_shots,utd_sot,opp_sot,utd_passes,opp_passes,utd_tackles,utd_interceptions,utd_fouls,pressing_proxy,utd_mkt_winprob
+2099-01-01,Fictional League,Imaginary Town FC,Home,A. Manager,4,started,1,90,2,1,3,1.85,0.90,58,14,9,6,3,520,360,18,8,10,10.0,0.55
+2099-01-08,Fictional League,Nowhere United,Away,A. Manager,7,none,0,0,0,2,0,0.75,1.60,44,8,15,2,6,410,540,21,11,12,16.5,0.30

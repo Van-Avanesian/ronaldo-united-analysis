@@ -1,0 +1,16 @@
+test,grpA_mean,grpB_mean,p_value,cohen_d,note,sig_0.05,sig_bonf
+pressing_proxy,13.15,12.29,0.397,0.2,team,False,False
+opp_xg_conceded,1.4,1.25,0.501,0.19,team,False,False
+points,1.55,1.71,0.633,-0.12,team,False,False
+win_rate,0.41,0.51,0.45,,"team, Fisher",False,False
+opp_strength(mkt winprob),0.39,0.53,0.00863,-0.88,PL only,True,False
+def_actions_p90 (vs UTD),1.32,1.62,0.145,-0.21,player,False,False
+recoveries_p90 (vs UTD),1.8,3.82,7.65e-11,-0.81,player,True,True
+def_actions_p90 (vs all),1.32,1.94,0.0016,-0.36,player,True,True
+recoveries_p90 (vs all),1.8,3.88,1.6e-14,-0.83,player,True,True
+box_touches_p90 (vs all),4.64,3.48,0.0686,0.32,player,False,False
+xg_p90 (vs all),0.61,0.35,0.00179,0.55,player,True,True
+goal_invol_p90 (vs all),0.69,0.45,0.0809,0.27,player,False,False
+recoveries_p90 (vs CF),1.8,2.77,0.000927,-0.5,"player, CF-only",True,True
+def_actions_p90 (vs CF),1.32,1.45,0.547,-0.1,"player, CF-only",False,False
+xg_p90 (vs CF),0.61,0.35,0.00201,0.64,"player, CF-only",True,True

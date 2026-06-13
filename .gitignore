@@ -1,0 +1,12 @@
+# Scraped FotMob cache (67MB, regenerate with scrape.py)
+fotmob/
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+# Regenerable intermediate (rebuilt by scrape.py)
+ronaldo_matches_raw.csv
+
+# Provider-sourced datasets — not redistributed (FotMob-derived)
+ronaldo_stint_dataset.csv
+forward_match_stats.csv
