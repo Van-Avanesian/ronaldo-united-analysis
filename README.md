@@ -99,7 +99,7 @@ column schemas (rename the mock files, or point the script at your data).
 
 ## Limitations
 
-- Observational data, single club: associations, not proven causation.
+- Observational data, single club — associations, not proven causation.
 - "Recoveries / defensive actions" is a defensive **work-rate proxy**, not StatsBomb
   "pressures" (no longer publicly served for this era).
 - Match-level t-tests involve repeated observations of the same players; the player-level
