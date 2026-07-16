@@ -12,6 +12,7 @@ Two levels of analysis:
                          attacking work, than comparable forwards? (the mechanism)
   PART C  Summary table + multiple-testing note.
 """
+import sys
 import numpy as np, pandas as pd
 from scipy import stats
 import statsmodels.formula.api as smf
@@ -19,6 +20,25 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+
+class _Tee:
+    """Send console output to both the terminal and a log file."""
+    def __init__(self, *streams):
+        self._streams = streams
+
+    def write(self, text):
+        for s in self._streams:
+            s.write(text)
+
+    def flush(self):
+        for s in self._streams:
+            s.flush()
+
+
+OUTPUT_LOG = "analysis_output.txt"
+_logfile = open(OUTPUT_LOG, "w")
+sys.stdout = _Tee(sys.__stdout__, _logfile)
 
 sns.set_theme(style="whitegrid")
 RED, GREY = "#E64A40", "#9aa0a6"
@@ -189,5 +209,10 @@ ax.set_title("The trade-off: Ronaldo stays high, does little defending")
 ax.legend()
 save(fig, "py_tradeoff.png")
 
-print("\nFigures saved: py_points.png, py_recoveries.png, py_tradeoff.png")
-print("Summary table: results_summary.csv")
+print("\nOutputs written:")
+print("  Figures:       py_points.png, py_recoveries.png, py_tradeoff.png")
+print("  Summary table: results_summary.csv")
+print(f"  Full run log:  {OUTPUT_LOG}")
+
+sys.stdout = sys.__stdout__
+_logfile.close()
